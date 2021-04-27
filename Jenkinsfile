@@ -1,11 +1,11 @@
 #!groovy
 pipeline {
-    agent none
+    agent any
    stages {
 stage('Docker Build') {
       agent any
       steps {
-        'docker pull mysql'
+        sh 'docker build -t litalwe3/spring-petclinic:latest .'
       }
 }
 }
