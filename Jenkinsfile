@@ -1,9 +1,9 @@
 #!groovy
 pipeline {
-    agent docker
+    agent any
    stages {
 stage('Docker Build') {
-      agent docker
+      agent any
       steps {
         sh 'docker build -t litalwe3/spring-petclinic:latest .'
       }
