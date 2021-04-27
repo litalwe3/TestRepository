@@ -8,4 +8,5 @@ stage('Docker Build') {
         sh 'docker build -t litalwe3/spring-petclinic:latest .'
       }
 }
+}
 }     
