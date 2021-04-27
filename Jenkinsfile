@@ -5,7 +5,7 @@ pipeline {
 stage('Docker Build') {
       agent any
       steps {
-        docker pull mysql
+        'docker pull mysql'
       }
 }
 }
